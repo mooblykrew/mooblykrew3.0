@@ -1,0 +1,25 @@
+** This file is to assist editing the header. The script Javascript pulls in must be all one line.
+** So this file is the same content on multiple lines to help with edits.				
+                
+<!-- Image that appears above header -->
+<div id = "header">
+    <div id = "sitebranding">
+        <div class="header-text">M O O B L Y  &nbsp K R E W</div>
+    </div> <!-- end of sitebranding div -->
+    <div id = "header_tagline">
+    
+        <p>The production house for the start-up musician.</p>
+    </div> <!-- end of tagline div-->
+</div> <!-- end of header div -->
+
+<!-- Header content (links) -->		
+<div class = "navigation" id = "myTopnav">
+    <a href = "index.html">Home</a>
+    <a href = "about.html">About Us</a>
+    <a href = "services.html">Services</a>
+    <a href = "artists.html">Artists</a>
+    <a href = "merch.html">Merch</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div> <!-- end of navigation div-->

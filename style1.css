@@ -1,0 +1,286 @@
+/*
+CSS for Moobly Krew Site
+*/
+
+/* general settings and fonts*/
+/*---------------------------------------------------------------------------------------------------*/
+html, body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #c0bfbf;
+    line-height: 125%;
+    height: 100%
+}
+
+h1{
+    font-family:'Futura', 'Georgia', sans-serif;
+    font-size:x-large;
+}
+
+h2{
+    font-family:'Futura', 'Georgia', sans-serif;
+    color: black;
+    font-size: medium;
+    font-weight: normal;
+}
+
+p, div, li{
+    font-family:'Futura', 'Georgia', sans-serif;
+    font-size: small;
+    list-style-type: none;
+}
+
+/*class for price headers on Services page*/
+.price{
+    font-family:'Futura', 'Georgia', sans-serif;
+    color: rgb(131, 80, 151);
+    font-size: large;
+    font-weight: normal;
+    border-bottom: 3px none rgb(131, 80, 151)|initial|inherit;
+}
+
+
+/*settings for header and tagline*/
+/*---------------------------------------------------------------------------------------------------*/
+.header-text{
+    font-size: xx-large;
+    font-family:'Futura', 'Georgia', sans-serif;
+    text-align:center;
+}
+
+#header_tagline{
+    font-style: italic;
+    font-size: medium;
+    font-family:'Futura', 'Georgia', sans-serif;
+    text-align:center;
+}
+
+/* format all a-elements (links) */
+/*---------------------------------------------------------------------------------------------------*/
+a:link{
+    color:rgb(131, 80, 151);
+}
+
+a:visited{
+    color:rgb(121, 71, 141);
+}
+
+a:hover{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(131, 80, 151);
+
+}
+
+a:active{
+    color:rgb(149, 117, 161);
+    background-color: rgb(131, 80, 151);
+}
+
+/* makes main page's image responsive to the browser width, max 400 px */
+/*---------------------------------------------------------------------------------------------------*/
+.responsive {
+    display: block;
+    width: 100vw;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+}
+
+.landing-page{
+    background-color: black;
+}
+
+/* Centers the body content */
+/*---------------------------------------------------------------------------------------------------*/
+ #bodycontent{
+    display: block;
+    padding-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 60px;
+}
+/* makes max-width of text-heavy content 700 px */
+/*---------------------------------------------------------------------------------------------------*/
+#aboutbodycontent{
+    max-width: 600px;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 60px;
+}
+
+/* deltails requirements for the navigation Bar */
+/*---------------------------------------------------------------------------------------------------*/
+#navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-top-color: rgb(131, 80, 151);
+    border-top-width:5px;
+    border-top-style:solid;
+    border-bottom-color: rgb(131, 80, 151);
+    border-bottom-width:5px;
+    border-bottom-style:solid;
+}
+  
+#navigation li {
+    float: left;
+}
+  
+#navigation li a {
+    display: block;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+#navigation li a:hover {
+    background-color: #111;
+}
+
+/*Make the Navbar stick to the top of the page*/
+/*---------------------------------------------------------------------------------------------------*/
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .bodycontent {
+    padding-top: 60px;
+}
+
+/*paste stuff from W3 to make contact cards*/
+/*---------------------------------------------------------------------------------------------------*/
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 30%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    display:block;
+    text-align: center;
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  /* Add some shadows to create a card effect */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Some left and right padding inside the container */
+  .container {
+    padding: 0 16px;
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: rgb(92, 92, 92);
+    text-align: center;
+  }
+
+  .artist-links{
+      text-align: center;
+
+  }
+
+/*use contact card formats for 2-column applications.*/
+/*---------------------------------------------------------------------------------------------------*/
+/* Three columns side by side */
+.two-column {
+    float: left;
+    width: 45%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    display:block;
+  }
+  
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 800px) {
+    .two-column {
+        width: 100%;
+        display: block;
+    }
+}
+  /* Clear floats */
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/*Checkout Button*/
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: rgb(131, 80, 151);
+    text-align: center;
+    font-size: large;
+    cursor: pointer;
+    width: 100%;
+    }
+
+/* Sets min heights and allows padding so that the footer always appears either at the bottom or under all the content*/
+/* ref https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ */
+/*---------------------------------------------------------------------------------------------------*/
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+  
+#header-and-content-wrapper {
+    padding-bottom: 4.5rem;    /* Footer height */
+}
+
+/* details the footer style*/
+/*---------------------------------------------------------------------------------------------------*/
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4.5rem;            /* Footer height */
+    text-align: center;
+    background: #1d1d0e;
+    color: white;
+}
+
+#footer #footer-bottom{
+    background: #030303;
+    color: #686868;
+    height: 50 px;
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Right-aligned links in footer */
+.footer-section-social{
+    float: right;
+  }
